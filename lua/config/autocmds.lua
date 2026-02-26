@@ -12,13 +12,13 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
--- close the quickfix once selected
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "qf", -- quickfix filetype
-  callback = function()
-    vim.keymap.set("n", "<CR>", "<CR>:cclose<CR>", { buffer = true })
-  end,
-})
+-- -- close the quickfix once selected
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "qf", -- quickfix filetype
+--   callback = function()
+--     vim.keymap.set("n", "<CR>", "<CR>:cclose<CR>", { buffer = true })
+--   end,
+-- })
 
 -- enable standard autocompletions
 vim.api.nvim_create_autocmd("LspAttach", {
