@@ -13,35 +13,35 @@ return {
       desc = "List open buffers",
     },
     {
-      "<leader>/",
+      "<leader>sw",
       function()
         require("telescope.builtin").live_grep()
       end,
       desc = "Search in workspace",
     },
     {
-      "<leader>ff",
+      "<leader>sf",
       function()
         require("telescope.builtin").find_files()
       end,
       desc = "Find files",
     },
     {
-      "<leader>fs",
+      "<leader>sb",
       function()
         require("telescope.builtin").current_buffer_fuzzy_find()
       end,
       desc = "Search in buffer",
     },
     {
-      "<leader>S",
+      "<leader>sS",
       function()
         require("telescope.builtin").lsp_workspace_symbols()
       end,
       desc = "Workspace symbols",
     },
     {
-      "<leader>s",
+      "<leader>ss",
       function()
         require("telescope.builtin").lsp_document_symbols()
       end,
